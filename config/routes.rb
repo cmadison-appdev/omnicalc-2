@@ -24,3 +24,5 @@ Rails.application.routes.draw do
   # get("/coords_to_weather_new"", { :controller => "application", :action => "twins" })
 
 end
+url = "https://maps.googleapis.com/maps/api/geocode/json?address=5807+S+Woodlawn+Ave&key="
+  + ENV.fetch("GMAPS_KEY")
